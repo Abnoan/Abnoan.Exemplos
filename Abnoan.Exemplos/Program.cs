@@ -5,26 +5,23 @@ public class Program
     static void Main()
     {
         #region Construtores
-        Ponto p = new Ponto(1, 2);
-        p.Deslocar(3, 4);
-        Console.WriteLine($"Novo ponto está em ({p.X}, {p.Y}).");
 
-        Carro meuCarro = new Carro("Vermelho", 50000m, "ABC-1234", "1HGBH41JXMN109186");
+        Carro meuCarro = new Carro("Fiat Uno", "Vermelho", 2021, "ABC-1234");
 
-        Carro meuOutroCarro = new("Azul", 40000m, "AAD4F7", "2HGBH41JXMN109186");
+        Carro meuOutroCarro = new("Honda Civic", "Azul", 2020, "AAD4F7");
 
         Carro meuTerceiroCarro = new Carro();
-        meuCarro.Cor = "Azul";
-        meuCarro.Valor = 30000m;
-        meuCarro.Placa = "DEF-5678";
-        meuCarro.Chassi = "2HGBH41JXMN109187";
+        meuTerceiroCarro.Modelo = "Toyota Corolla";
+        meuTerceiroCarro.Cor = "Preto";
+        meuTerceiroCarro.Ano = 2023;
+        meuTerceiroCarro.Placa = "DEF-5678";
 
         Carro meuQuartoCarro = new()
         {
-            Cor = "Rosa",
-            Chassi = "2HGBH41JXMN109182",
-            Placa = "KGB-1071",
-            Valor = 60000m
+            Modelo = "Fusca",
+            Cor = "Azul",
+            Ano = 1958,
+            Placa = "KGB-1071"
         };
 
         #endregion
